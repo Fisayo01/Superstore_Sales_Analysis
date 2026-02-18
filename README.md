@@ -88,15 +88,14 @@ Remove Special Symbols (® and ™) were removed using find an replace feature i
 -Total Loss: 132.9K
 Although the business was profitable overall, significant losses were concentrated in specific products and segments.
 
-**Dashboard:** <img width="1039" height="653" alt="Screenshot 2026-02-18 230003" src="https://github.com/user-attachments/assets/14d29e00-001a-410f-a0c0-0ba041b3ad52" />
+### Sales Dashboard 📊:
+<img width="1039" height="653" alt="Screenshot 2026-02-18 230003" src="https://github.com/user-attachments/assets/14d29e00-001a-410f-a0c0-0ba041b3ad52" />
 <img width="1039" height="655" alt="Screenshot 2026-02-18 230406" src="https://github.com/user-attachments/assets/5ee13081-2813-4e81-b574-17087dc75bc8" />
 
-
-
 ### 2.  Customer Segment Analysis
-The Corporate segment generated the highest sales (876.24K).
-However, the Corporate segment also recorded the highest losses.
-✅ _Insight_:
+- The Corporate segment generated the highest sales (876.24K). However, the Corporate segment also recorded the highest losses.
+ ✅
+ _Insight_:
  Corporate customers drive revenue but at reduced profitability, likely due to aggressive discounting.
 
 ### 3. Product Category Performance
@@ -144,7 +143,7 @@ Introduce tiered pricing models to balance competitiveness and profitability.
 **5. Enhance Data Quality**
 Incorporate cost price and operational cost data for more accurate profitability analysis.
 
-## Project Impact
+## 🚀 Project Impact
  This analysis provided a clear understanding of the drivers of sales and profit, enabling stakeholders to:
 - Identify loss-making products and segments.
 - Improve pricing and discount decisions
