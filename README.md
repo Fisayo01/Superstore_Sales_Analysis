@@ -18,6 +18,7 @@ The analysis was conducted using a retail sales dataset covering the period from
 - Geographic data (Region, State, City)
 - Profit metrics
 The dataset did not include cost price, which required careful interpretation of profit and loss patterns.
+### Raw Dataset: [SuperStore.xlsx](https://github.com/user-attachments/files/25401038/SuperStore.xlsx)
 
 ## ⚙️ Analytical Approach
 To address the business problem, the following steps were performed:
@@ -27,6 +28,58 @@ To address the business problem, the following steps were performed:
 - Identification of loss-making products and discount-driven transactions
 - Visualization of insights using an interactive Power BI dashboard
 
+## Data Cleaning Process
+### Overview
+The Superstore Sales dataset was cleaned and transformed to ensure accuracy, consistency, and usability for sales performance analysis and dashboard development. The cleaning process involved handling missing values, correcting data types, removing duplicates, standardizing text fields, and validating key business metrics.
+
+### Objectives
+- Ensure data accuracy and reliability.
+- Prepare the dataset for SQL analysis and Power BI visualization.
+- Improve data consistency and integrity.
+- Enable accurate calculation of KPIs such as Revenue, Profit, and Profit Margin.
+
+### Cleaning Steps Performed
+**1. Data Inspection**
+Initial data profiling was performed to understand:
+- Number of rows and columns.
+- Data types of each column.
+- Presence of null values.
+- Duplicate records.
+- Inconsistent text formatting
+
+ **Cleaned Dataset:** [SuperStoreCleaned.xlsx](https://github.com/user-attachments/files/25400827/SuperStoreCleaned.xlsx)
+
+**Tools used:**
+- Excel
+
+**2. Handling Missing Values**
+  Findings:
+  Dataset contained no critical missing values in key columns such as Sales, Profit, and Product Category.
+  *Actions taken:*
+  Verify blanks by using filter to check any blank cell.
+
+**3. Removing Duplicate Records**
+Duplicates were checked by selecting all the data and clicking on the remove duplicate feature in Excel.
+*Action taken:*
+Removed duplicate records to prevent double counting.
+
+**4. Standardizing Data Formats**
+- Text Standardization
+Corrected inconsistent text entries such as:
+- Extra spaces (using Trim function)
+- Inconsistent capitalization (Proper case function)
+- Inconsistent date format: selected the affected column, navigated to Text to Column feature, and then uncheck all delimiters, follow by selecting Date to change the format
+
+**5. Data Type Correction**
+Columns data type were properly checked to ensure correct data type
+*Action taken:*
+Corrected incorrect data types to ensure accurate calculations
+
+**6. Inconsistent text**
+Inconsistent text were for using filter.
+*Action taken:*
+Remove Special Symbols (® and ™) were removed using find an replace feature in Excel.
+
 ## 📈 Key Findings & Insights
 ### 1. Overall Performance
 - Total Sales: 2.32M
@@ -35,37 +88,42 @@ To address the business problem, the following steps were performed:
 -Total Loss: 132.9K
 Although the business was profitable overall, significant losses were concentrated in specific products and segments.
 
+**Dashboard:** <img width="1039" height="653" alt="Screenshot 2026-02-18 230003" src="https://github.com/user-attachments/assets/14d29e00-001a-410f-a0c0-0ba041b3ad52" />
+<img width="1039" height="655" alt="Screenshot 2026-02-18 230406" src="https://github.com/user-attachments/assets/5ee13081-2813-4e81-b574-17087dc75bc8" />
+
+
+
 ### 2.  Customer Segment Analysis
 The Corporate segment generated the highest sales (876.24K).
 However, the Corporate segment also recorded the highest losses.
 ✅ _Insight_:
-- Corporate customers drive revenue but at reduced profitability, likely due to aggressive discounting.
+ Corporate customers drive revenue but at reduced profitability, likely due to aggressive discounting.
 
 ### 3. Product Category Performance
 - The Technology category generated the highest total profit and order volume.
 - The Furniture category recorded the highest profit margin.
 - Technology also accounted for the bulk of total orders.
 ✅ _Insight_:
-- Technology drives volume and total profit, while Furniture drives margin efficiency.
+  Technology drives volume and total profit, while Furniture drives margin efficiency.
 
 ### 4. Sub-Category Performance
 - Office Machines recorded the highest sales (439.87K).
 - Sixteen sub-categories recorded losses, all associated with discounted products.
 - Storage and Organisation recorded the highest loss.
 ✅ _Insight_:
-- Excessive discounting is the primary driver of losses across product sub-categories.
+ Excessive discounting is the primary driver of losses across product sub-categories.
 
 ### 5. Shipping Mode Analysis
 - Regular shipping was the most frequently used mode.
 ✅ _Insight_:
-- Customers prefer cost-effective shipping options, suggesting stable logistics efficiency.
+ Customers prefer cost-effective shipping options, suggesting stable logistics efficiency.
 
 ### 6. . Geographic Performance
 - Central and East regions performed best in sales and profit.
 - New York and California were the top-performing states.
 - Franklin Square and Baton Rouge were the highest-performing cities.
 ✅ _Insight_:
-- Revenue and profitability are concentrated in specific geographic markets.
+ Revenue and profitability are concentrated in specific geographic markets.
 
 ## 💡 Business Implications
 - The analysis revealed that:
@@ -87,7 +145,7 @@ Introduce tiered pricing models to balance competitiveness and profitability.
 Incorporate cost price and operational cost data for more accurate profitability analysis.
 
 ## Project Impact
-This analysis provided a clear understanding of the drivers of sales and profit, enabling stakeholders to:
+ This analysis provided a clear understanding of the drivers of sales and profit, enabling stakeholders to:
 - Identify loss-making products and segments.
 - Improve pricing and discount decisions
 - Align product strategy with profitability goals.
