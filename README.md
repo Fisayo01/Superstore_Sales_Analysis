@@ -51,6 +51,7 @@ Initial data profiling was performed to understand:
 
 **Tools used:**
 - Excel
+- PowerBI
 
 **2. Handling Missing Values**
   Findings:
